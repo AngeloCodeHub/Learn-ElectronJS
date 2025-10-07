@@ -1,0 +1,8 @@
+{
+  "window.title": "${rootName}→${activeEditorShort}",
+  "files.exclude": {},
+  "explorer.excludeGitIgnore": true,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+}

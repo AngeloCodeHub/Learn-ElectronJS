@@ -1,0 +1,7 @@
+{
+  "recommendations": [],
+  "unwantedRecommendations": [
+    "google.geminicodeassist",
+    "ms-vscode.powershell"
+  ]
+}
