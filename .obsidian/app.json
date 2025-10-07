@@ -1,0 +1,13 @@
+{
+  "userIgnoreFilters": [
+    "node_modules/",
+    "src/"
+  ],
+  "showInlineTitle": false,
+  "showLineNumber": true,
+  "alwaysUpdateLinks": true,
+  "defaultViewMode": "preview",
+  "tabSize": 2,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "筆記"
+}
