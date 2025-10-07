@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "allowJs": true,
+    "module": "esnext",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "paths": {
+      "*": [
+        "node_modules/*"
+      ],
+      "@/*": [
+        "./src/*"
+      ],
+    },
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src/**/*",
+    "./*.ts",
+    "tools/**/*"
+  ],
+  "exclude": [
+    "./Ref-Code",
+    "./.webpack"
+  ]
+}
