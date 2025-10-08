@@ -2,9 +2,9 @@
   "window.title": "${rootName}→${activeEditorShort}",
   "cSpell.words": [],
   "files.exclude": {
-    // ".obsidian": true,
+    ".obsidian": true,
   },
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  // "explorer.excludeGitIgnore": true
+  "explorer.excludeGitIgnore": true
 }

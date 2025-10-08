@@ -60,6 +60,13 @@
         "type": "DIRECTORIES",
         "pattern": "node_modules",
         "patternType": "STRICT"
+      },
+      {
+        "name": "",
+        "active": true,
+        "type": "DIRECTORIES",
+        "pattern": "SrcCode",
+        "patternType": "STRICT"
       }
     ],
     "frontMatter": [
