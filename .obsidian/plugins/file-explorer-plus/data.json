@@ -67,6 +67,13 @@
         "type": "DIRECTORIES",
         "pattern": "SrcCode",
         "patternType": "STRICT"
+      },
+      {
+        "name": "",
+        "active": true,
+        "type": "DIRECTORIES",
+        "pattern": "out",
+        "patternType": "STRICT"
       }
     ],
     "frontMatter": [
