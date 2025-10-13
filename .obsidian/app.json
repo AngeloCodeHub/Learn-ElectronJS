@@ -3,9 +3,11 @@
     "node_modules/",
     "src/"
   ],
-  "showInlineTitle": true,
+  "showInlineTitle": false,
   "showLineNumber": true,
   "alwaysUpdateLinks": true,
   "defaultViewMode": "preview",
-  "tabSize": 2
+  "tabSize": 2,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "筆記"
 }
