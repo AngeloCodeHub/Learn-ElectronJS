@@ -16,3 +16,8 @@ corepack enable
 
 Bun 目錄
 c:\Users\user\.bun
+
+- corepack 升級 pnpm
+  ```PowerShell
+  corepack use pnpm@10.25.0
+  ```
