@@ -1,0 +1,2 @@
+- [Gemini dotenv 對話](https://gemini.google.com/app/5c3ebf57655c5c5f)
+- [dotenv](https://github.com/motdotla/dotenv)
