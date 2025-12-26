@@ -1,5 +1,7 @@
 import { type Browser, type BrowserContext, chromium, type Page } from 'playwright';
 import { spawn } from 'child_process';
+import { readFileSync } from 'fs';
+// import path from 'path';
 import { decryptCredentials } from '@/security/credentials';
 
 export type AutomationResult = {
@@ -47,9 +49,21 @@ async function maximizeChromeWindow(context: BrowserContext, page: Page) {
   }
 }
 
+const getChromePath = (): string => {
+  try {
+    const clientVhdxFile = 'd:\\ClientVHDXDriverLetter.json';
+    const data = readFileSync(clientVhdxFile, 'utf-8');
+    const { driveLetter } = JSON.parse(data) as { driveLetter: string };
+    return `${driveLetter}:\\Chrome\\Chrome.exe`;
+  } catch (error) {
+    console.error('Failed to read ClientVHDXDriverLetter.json:', error);
+    return '';
+  }
+};
+
 export async function runNetflixAutoLogin(onLog?: (message: string) => void): Promise<AutomationResult> {
   const remoteDebuggingPort = 9222;
-  const chromePath = process.env.CHROME_PATH;
+  const chromePath = getChromePath();
   const userDataDir = process.env.USER_DATA_DIR;
   const appUrl = process.env.APP_URL;
 
@@ -61,7 +75,7 @@ export async function runNetflixAutoLogin(onLog?: (message: string) => void): Pr
   };
 
   if (!chromePath || !userDataDir || !appUrl) {
-    throw new Error('Missing required environment variables: CHROME_PATH, USER_DATA_DIR, or APP_URL');
+    throw new Error('Missing Chrome path, USER_DATA_DIR, or APP_URL');
   }
 
   let browser: Browser | null = null;
@@ -253,7 +267,7 @@ export async function runNetflixAutoLogin(onLog?: (message: string) => void): Pr
       browser.isConnected();
     }
 
-    const message = 'Netflix 自動登入流程完成，Chrome 已保持開啟。';
+    const message = 'Netflix 啟動完成。';
     log(message);
     return { status: 'success', message };
 
