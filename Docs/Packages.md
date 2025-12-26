@@ -1,7 +1,7 @@
 # 專案套件
 	專案所使用套件官網與DOC整理
 
-## [Next.JS](https://nextjs.org/)
+## [Electron](https://www.electronjs.org/)
 
 ## [React.JS](https://react.dev/)
 
