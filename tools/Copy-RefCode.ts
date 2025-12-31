@@ -1,7 +1,6 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "fs";
-import { join, relative, dirname } from "path";
+import { join, relative } from "path";
 import { readdirSync, statSync } from "fs";
-import { fileURLToPath } from "url";
 
 // interface CopyOptions {
 //   sourceDir: string;
@@ -61,9 +60,7 @@ function copyDirectory(
  */
 async function main() {
   try {
-    const __filename = fileURLToPath(import.meta.url);
-    const __dirname = dirname(__filename);
-    const projectRoot = join(__dirname, "..");
+    const projectRoot = process.cwd();
     const sourceArg = process.argv[2];
     const sourceFolder = sourceArg?.trim();
     if (!sourceFolder) {

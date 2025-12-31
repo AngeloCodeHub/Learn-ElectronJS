@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "target": "es2022",
     "allowJs": true,
-    "module": "commonjs",
+    "module": "nodenext",
     "skipLibCheck": true,
     "esModuleInterop": true,
     "noImplicitAny": true,
     "sourceMap": true,
     "baseUrl": ".",
     "outDir": "dist",
-    "moduleResolution": "node",
+    "moduleResolution": "nodenext",
     "resolveJsonModule": true,
     "paths": {
       "*": [
@@ -27,6 +27,7 @@
     "tools/**/*"
   ],
   "exclude": [
-    "./Ref-Code"
+    "./Ref-Code",
+    "./.webpack"
   ]
 }
