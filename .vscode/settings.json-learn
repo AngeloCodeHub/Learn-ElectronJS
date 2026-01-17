@@ -1,0 +1,12 @@
+{
+  "window.title": "${rootName}→${activeEditorShort}",
+  "files.exclude": {
+    "node_modules": true,
+    "Ref-Code": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
+}
