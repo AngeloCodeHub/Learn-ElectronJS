@@ -1,8 +1,5 @@
 {
-  "recommendations": [
-    "github.copilot",
-    "oven.bun-vscode"
-  ],
+  "recommendations": [],
   "unwantedRecommendations": [
     "google.geminicodeassist",
     "ms-vscode.powershell"

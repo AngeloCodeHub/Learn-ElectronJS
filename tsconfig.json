@@ -9,15 +9,12 @@
     "sourceMap": true,
     "baseUrl": ".",
     "outDir": "dist",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "paths": {
-      "*": [
-        "node_modules/*"
-      ],
       "@/*": [
         "./src/*"
-      ],
+      ]
     },
     "jsx": "react-jsx"
   },
